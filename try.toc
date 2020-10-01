@@ -11,6 +11,6 @@
 \contentsline {subsection}{\numberline {2.2}实验方案}{8}%
 \contentsline {subsubsection}{\numberline {2.2.1}JUNO的中微子信号}{8}%
 \contentsline {subsubsection}{\numberline {2.2.2}实验的探测器设计}{9}%
-\contentsline {subsubsection}{\numberline {2.2.3}JUNO的刻度系统}{10}%
+\contentsline {subsubsection}{\numberline {2.2.3}JUNO的刻度系统}{9}%
 \contentsline {subsubsection}{\numberline {2.2.4}JUNO TAO（台山反中微子观测台）}{10}%
 \contentsline {subsubsection}{\numberline {2.2.5}JUNO 优势及物理意义}{10}%

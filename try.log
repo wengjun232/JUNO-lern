@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.9.17)  1 OCT 2020 14:53
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.9.17)  1 OCT 2020 15:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -497,6 +497,9 @@ File: ctex-name-utf8.cfg 2019/05/29 v2.4.16 Caption with encoding UTF8 (CTEX)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
+(/usr/share/texlive/texmf-dist/tex/latex/ctex/ctex-c5size.clo
+File: ctex-c5size.clo 2019/05/29 v2.4.16 c5size option (CTEX)
+)
 (/usr/share/texlive/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-fandol.def
 File: ctex-fontset-fandol.def 2019/05/29 v2.4.16 Fandol fonts definition (CTEX)
 
@@ -563,6 +566,10 @@ other characters in Unicode lower plane
 ) (/usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xunicode-extra.def
 File: xunicode-extra.def 2020/02/14 v3.8.1 extra definition for xunicode
 )
+
+LaTeX Warning: Unused global option(s):
+    [15pt].
+
 (./try.aux
 LaTeX Info: Redefining \rmfamily on input line 2.
 LaTeX Info: Redefining \sffamily on input line 2.
@@ -777,15 +784,9 @@ Missing character: There is no ， in font [lmroman10-regular]:mapping=tex-text;
  [4] [5] [6]
 File: images/傅里叶图谱.png Graphic file (type bmp)
 <images/傅里叶图谱.png>
- [7]
-Overfull \hbox (17.41275pt too wide) in paragraph at lines 202--203
-[]\TU/FandolSong-Regular(0)/m/n/10 如 果 探 测 器 探 测 到 这 个 中 微 子 入 射 并 与 液 闪 作 用，| 
- 那 么 会 在 探 测 得 到 的 波 形 中 看 到，|  在[][]处 和[][]处
- []
-
+ [7] [8]
 File: images/探测器示意图.png Graphic file (type bmp)
 <images/探测器示意图.png>
-[8]
 File: images/pmt测试.png Graphic file (type bmp)
 <images/pmt测试.png>
  [9]
@@ -833,11 +834,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18219 strings out of 479819
- 411782 string characters out of 5895846
- 662030 words of memory out of 5000000
- 35101 multiletter control sequences out of 15000+600000
- 539092 words of font info for 89 fonts, out of 8000000 for 9000
+ 18246 strings out of 479819
+ 414009 string characters out of 5895846
+ 662648 words of memory out of 5000000
+ 35119 multiletter control sequences out of 15000+600000
+ 541838 words of font info for 105 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  57i,18n,73p,822b,519s stack positions out of 5000i,500n,10000p,200000b,80000s
 

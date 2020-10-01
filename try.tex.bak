@@ -105,9 +105,24 @@ i\frac{\partial}{•\partial t}|\nu_{k}>=H_{0}|\nu_{k}>
 \begin{equation}
 |\nu_{\alpha}(t)>=\sum_{k,\alpha}U_{\alpha k}^{*}U_{\beta k}e^{-iE_{k}t}|\nu_{\beta}>
 \end{equation}
-由此，可以认为t时刻的中微子的态可以表示为初始时刻的本征态的叠加，
-
-
+由此，可以认为t时刻的中微子的态可以表示为初始时刻的本征态的叠加，则可以得到，从态$|\alpha>$振荡到态$|\beta>$的幅度为：
+\begin{equation}
+A_{\alpha\beta}(t)=<\beta|\alpha(t)>=\sum_{k}U_{\alpha k}^{*}U_{\beta k}e^{-iE_{k}t}
+\end{equation}
+从态$|\alpha>$振荡到态$|\beta>$的概率为：
+\begin{equation}
+\begin{split}
+P_{\alpha\beta}(t)=A_{\alpha\beta}(t){A_{\alpha\beta}(t)}^*=\sum_{k,j}U_{\alpha k}^{*}U_{\beta k}e^{-iE_{k}t}U_{\alpha j}^{*}U_{\beta j}e^{iE_{j}t}\\
+=\sum_{k,j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}^{*}U_{\beta j}e^{-i(E_{k}-E_{j})t}
+\end{split}
+\end{equation}
+中微子的运动速度是很接近光速的，是相对论粒子的范畴，动能远大于静止能量，因此，对于其能量有：
+\begin{equation}
+E_{k}=\sqrt{p^2+m_k^2}=|p|\sqrt{1+\frac{m_k^2}{p^2}}\approx |p|+\frac{m_k^2}{|p|}=E+\frac{m_k^2}{E}
+\end{equation}
+其中，$E=|q|$。
+带入到式（11）：
+P_{\alpha\beta}(t)=\sum_{k,j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}^{*}U_{\beta j}e^{-i(E_{k}-E_{j})t}
 \newpage
 \subsection{中微子的质量}\label{sub:sysover}
 中微子振荡实验证明了中微子是有质量的，且存在味道的混合。在振荡实验中，已经精确的测量了两个独立的中微子质量平方差的值，当目前仍然对于三者的质量大小仍然是未知的。
@@ -195,7 +210,7 @@ JUNO实验设备是目前世界上正在建设的最大的液闪探测器，优�
 中微子是不带电的粒子，在实验上无法直接观测到，但是中微子会参与一些弱相互作用，产生特定的带电粒子，实验上通过观测中微子与物资作用后产生的次级粒子，可以间接的观测到中微子的信号。
 
 JUNO是通过反$\beta$衰变（inverse beta decay，简称IBD）事件探测中微$$p+\bar{\nu}==e^{+}+n$$
-当一个反中微子与质子作用后，会产生一个中子和一个正电子。正电子是空间中不稳定的存在，它会和物质中的电子发生湮灭过程，一个正电子和电子湮灭后会产生两个能量大小为0.511MeV的γ光子。
+当一个反中微子与质子作用后，会产生一个中子和一个正电子。正电子是空间中不稳定的存在，它会和物质中的电子发生湮灭过程，一个正电子和电子湮灭后会产生两个能量大小为0.511MeV的$\gamma$光子。
 
 在衰变产生中子之后一段时间，中子会被氢原子核俘获，这个过程会在空间中激发光子，光子的能量大概是\SI{2.2}{MeV}。
 

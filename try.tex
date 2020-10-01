@@ -1,4 +1,4 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass[15pt,a4paper]{article}
 \usepackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text}
 \usepackage{xunicode}
@@ -105,8 +105,26 @@ i\frac{\partial}{•\partial t}|\nu_{k}>=H_{0}|\nu_{k}>
 \begin{equation}
 |\nu_{\alpha}(t)>=\sum_{k,\alpha}U_{\alpha k}^{*}U_{\beta k}e^{-iE_{k}t}|\nu_{\beta}>
 \end{equation}
-由此，可以认为t时刻的中微子的态可以表示为初始时刻的本征态的叠加，
-
+由此，可以认为t时刻的中微子的态可以表示为初始时刻的本征态的叠加，则可以得到，从态$|\alpha>$振荡到态$|\beta>$的幅度为：
+\begin{equation}
+A_{\alpha\beta}(t)=<\beta|\alpha(t)>=\sum_{k}U_{\alpha k}^{*}U_{\beta k}e^{-iE_{k}t}
+\end{equation}
+从态$|\alpha>$振荡到态$|\beta>$的概率为：
+\begin{equation}
+\begin{split}
+P_{\alpha\beta}(t)=A_{\alpha\beta}(t){A_{\alpha\beta}(t)}^*=\sum_{k,j}U_{\alpha k}^{*}U_{\beta k}e^{-iE_{k}t}U_{\alpha j}^{*}U_{\beta j}e^{iE_{j}t}\\
+=\sum_{k,j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}^{*}U_{\beta j}e^{-i(E_{k}-E_{j})t}
+\end{split}
+\end{equation}
+中微子的运动速度是很接近光速的，是相对论粒子的范畴，动能远大于静止能量，因此，对于其能量有：
+\begin{equation}
+E_{k}=\sqrt{p^2+m_k^2}=|p|\sqrt{1+\frac{m_k^2}{p^2}}\approx |p|+\frac{m_k^2}{2|p|}=E+\frac{m_k^2}{2E}
+\end{equation}
+其中，$E=|q|$。
+带入到式（11）：
+\begin{equation}
+P_{\alpha\beta}(t)=\sum_{k,j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}^{*}U_{\beta j}e^{-i\frac{\Delta m_{kj}}{2E}t}
+\end{equation}
 
 \newpage
 \subsection{中微子的质量}\label{sub:sysover}
