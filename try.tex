@@ -1,4 +1,4 @@
-\documentclass[15pt,a4paper]{article}
+\documentclass[10pt,a4paper]{article}
 \usepackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text}
 \usepackage{xunicode}
@@ -12,6 +12,10 @@
  \usepackage{siunitx}
 \usepackage{xeCJK}
 \usepackage{ctex}
+\usepackage{amsmath}
+\newcommand{\adots}{\mathinner{\mkern2mu%
+\raisebox{0.1em}{.}\mkern2mu\raisebox{0.4em}{.}%
+\mkern2mu\raisebox{0.7em}{.}\mkern1mu}}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \author{翁俊}
 \title{江门中微子（JUNO）调研报告}
@@ -25,6 +29,7 @@
 
 江门中微子实验是是继大亚湾反应堆中微子实验之后由中国主持的第二个大型中微子实验。实验站将建在地下700米深处，实验计划最早在2021年投入运行并开始物理取数，运行至少20年。实验建造的中微子探测器将是世界上能量精度最高、规模最大的液体闪烁体探测器。这一实验的启动标志着我国中微子实验研究从起步到跨越的转变。
 \subsection{神奇的幽灵粒子}\label{sub:sysover}
+
 中微子又译作微中子，是轻子)的一种，是组成自然界的最基本的粒子之一，常用符号ν表示。中微子不带电，自旋为1/2，质量非常轻(有的小于电子的百万分之一)，以接近光速运动。
 
 粒子物理的研究结果表明，构成物质世界的最基本的粒子有12种，包括6种夸克，3种带电轻子（电子，$\nu$子和$\tau$子）和3种中微子（电子中微子，$\nu$中微子和$\tau$中微子）。
@@ -122,28 +127,77 @@ P_{\alpha\beta}(t)=A_{\alpha\beta}(t){A_{\alpha\beta}(t)}^*=\sum_{k,j}U_{\alpha 
 \begin{equation}
 E_{k}=\sqrt{p^2+m_k^2}=|p|\sqrt{1+\frac{m_k^2}{p^2}}\approx |p|+\frac{m_k^2}{2|p|}=E+\frac{m_k^2}{2E}
 \end{equation}
+
 其中，$E=|q|$。
 带入到式（11）：
 \begin{equation}
 P_{\alpha\beta}(t)=\sum_{k,j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}e^{-i\frac{\Delta m_{kj}}{2E}t}
 \end{equation}
+
 在自然单位中，光速c的量纲为1，近似认为中微子速度为c，在t是时刻传播的距离为L：
 \begin{equation}
 P_{\alpha\beta}(t)=\sum_{k,j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}e^{-i\frac{\Delta m_{kj}}{2E}L}
 \end{equation}
+
 带入欧拉公式展开，可将实部和虚部分开，同时根据k和j的大小关系可分为三部分，其中，k和j交换位置后的值应该是相等的，所以有：
 \begin{equation}
 \begin{split}
-P_{\alpha\beta}(t)=\sum_{k=j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}e^{-i\frac{\Delta m_{kj}}{2E}L}+\sum_{k,j |k<j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}e^{-i\frac{\Delta m_{kj}}{2E}L}+\sum_{k,j |k>j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}e^{-i\frac{\Delta m_{kj}}{2E}L}\\
-=\sum_{k}{|U_{\alpha k}|}^{2}{|U_{\beta k}|}^{2}+2\sum_{k,j |k>j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\cos^2(-i\frac{\Delta m_{kj}}{2E}L)+2\sum_{k,j |k>j}iU_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\sin^2(-i\frac{\Delta m_{kj}}{2E}L)\\
-=\sum_{k}{|U_{\alpha k}|}^{2}{|U_{\beta k}|}^{2}+2\sum_{k,j |k>j}Re[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\cos^2(-i\frac{\Delta m_{kj}}{2E}L)]-2\sum_{k,j |k>j}Im[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\sin^2(-i\frac{\Delta m_{kj}}{2E}L)]
+P_{\alpha\beta}(L)=\sum_{k=j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}e^{-i\frac{\Delta m_{kj}}{2E}L}+\sum_{k,j |k<j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}e^{-i\frac{\Delta m_{kj}}{2E}L}+\sum_{k,j |k>j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}e^{-i\frac{\Delta m_{kj}}{2E}L}\\
+=\sum_{k}{|U_{\alpha k}|}^{2}{|U_{\beta k}|}^{2}+2\sum_{k,j |k>j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\cos(\frac{\Delta m_{kj}}{2E}L)+2\sum_{k,j |k>j}iU_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\sin(-\frac{\Delta m_{kj}}{2E}L)\\
+=\sum_{k}{|U_{\alpha k}|}^{2}{|U_{\beta k}|}^{2}+2\sum_{k,j |k>j}Re[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\cos(\frac{\Delta m_{kj}}{2E}L)]-2\sum_{k,j |k>j}Im[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\sin(-\frac{\Delta m_{kj}}{2E}L)]
 \end{split}
 \end{equation}
 其中：\begin{equation}
 \sum_{k}{|U_{\alpha k}|}^{2}{|U_{\beta k}|}^{2}=\delta_{\alpha\beta}-2Re\sum_{k,j |k>j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}
 \end{equation}
 
+结合余弦函数的二倍角公式，得到：
+\begin{equation}
+\begin{split}
+P_{\alpha\beta}(L)=\delta_{\alpha\beta}-2Re\sum_{k,j |k>j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}+2\sum_{k,j |k>j}Re[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\cos(\frac{\Delta m_{kj}}{2E}L)]\\-2\sum_{k,j |k>j}Im[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\sin(-\frac{\Delta m_{kj}}{2E}L)]\\
+=\delta_{\alpha\beta}-4\sum_{k,j |k>j}Re[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\sin^2(\frac{\Delta m_{kj}}{4E}L)]+\sum_{k,j |k>j}Im[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\sin(\frac{\Delta m_{kj}}{2E}L)]
+\end{split}
+\end{equation}
 
+在JUNO实验中，测量的主要是来自于53km之外的反应堆中微子，取$\alpha=\beta=\bar{\nu_e}$
+带入上式（17）：
+\begin{equation}
+\begin{split}
+P(\bar{\nu_e}\rightarrow\bar{\nu_e})=1-4\sum_{k,j |k>j}U_{e k}^{*}U_{e k}U_{e j}U_{e j}^{*}\sin^2(\frac{\Delta m_{kj}}{4E}L)\\
+=1-4\sum_{k,j |k>j}|U_{e k}|^2|U_{e j}|^2\sin^2(\frac{\Delta m_{kj}}{4E}L)
+\end{split}
+\end{equation}
+
+而3阶的MNSP矩阵U可以表示为：
+\begin{equation}
+U = \begin{pmatrix}
+ 1 & 0 & 0 \\
+ 0 & c_{23} & s_{23} \\
+ 0 & -s_{23} & c_{23}
+ \end{pmatrix}
+ \begin{pmatrix}
+ c_{13} & 0 & s_{13}e^{i\delta} \\
+ 0 & 1 & 0 \\
+ -s_{13}e^{i\delta} & 0 & c_{13}
+ \end{pmatrix}
+ \begin{pmatrix}
+ c_{12} & s_{12} & 0 \\
+ -s_{12} & c_{12} & 0 \\
+ 0 & 0 & 1
+ \end{pmatrix}P_{\nu}
+\end{equation}
+
+其中，$c_{ij}=\cos{\theta_{ij}}$，$s_{ij}=\sin{\theta_{ij}}$，$\delta$为CP破坏的相角。
+
+带入到式（18），得到：
+\begin{equation}
+\begin{split}
+P(\bar{\nu_e}-\bar{\nu_e},L)=1-{\sin^2{2\theta_{12}}} c_{13}^4\sin^2{\frac{\Delta{m_{21}^2}L}{4E}}-\\
+\sin^2{2\theta_{13}} *[c_{12}^2\sin^2{\frac{\Delta{m_{31}^2}L}{4E}}+s_{12}^2\sin^2{\frac{\Delta{m_{32}^2}L}{4E}}]
+\end{split}
+\end{equation}
+
+至此，就已经得到了中微子经过距离L后的存活概率。同时，可以从式（19）的表达式中看出，由质量的平方差值决定的中微子振荡可以用于确定振荡角。
 \newpage
 \subsection{中微子的质量}\label{sub:sysover}
 
@@ -158,6 +212,7 @@ P_{\alpha\beta}(t)=\sum_{k=j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^
 
 \subsection{JUNO中的中微子物理}\label{sub:sysover}
 \subsubsection{中微子的质量顺序}\label{sub:sysover}
+
 中微子振荡现象的发现确定了中微子的质量不为0，目前，标准的中微子的三味振荡的研究现状如下{\footnote{引自：Neutrino Physics with JUNO，p33}}：
 \begin{itemize}
 	\item{中微子MNSP轻子混合矩阵中三个非零混合角在精度在4\%到10\%得到了测量。}
