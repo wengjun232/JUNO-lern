@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.9.17)  1 OCT 2020 15:28
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.9.17)  2 OCT 2020 14:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -609,10 +609,10 @@ LaTeX Warning: Label `sub:logicinter' multiply defined.
 LaTeX Warning: Label `fig:singleblock' multiply defined.
 
 
-LaTeX Warning: Label `fig:singleblock' multiply defined.
-
-
 LaTeX Warning: Label `sub:logicinter' multiply defined.
+
+
+LaTeX Warning: Label `fig:singleblock' multiply defined.
 
 
 LaTeX Warning: Label `sub:logicinter' multiply defined.
@@ -781,7 +781,12 @@ Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
 File: images/中微子振荡示意图.jpg Graphic file (type bmp)
 <images/中微子振荡示意图.jpg>
 Missing character: There is no ， in font [lmroman10-regular]:mapping=tex-text;!
- [4] [5] [6]
+ [4]
+Overfull \hbox (23.23553pt too wide) detected at line 141
+[]
+ []
+
+[5] [6]
 File: images/傅里叶图谱.png Graphic file (type bmp)
 <images/傅里叶图谱.png>
  [7] [8]
@@ -836,7 +841,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  18246 strings out of 479819
  414009 string characters out of 5895846
- 662648 words of memory out of 5000000
+ 662649 words of memory out of 5000000
  35119 multiletter control sequences out of 15000+600000
  541838 words of font info for 105 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
