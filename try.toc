@@ -2,15 +2,15 @@
 \contentsline {section}{\numberline {1}JUNO实验课题背景与研究目标}{3}%
 \contentsline {subsection}{\numberline {1.1}神奇的幽灵粒子}{3}%
 \contentsline {subsection}{\numberline {1.2}中微子振荡}{4}%
-\contentsline {subsection}{\numberline {1.3}中微子的质量}{7}%
-\contentsline {section}{\numberline {2}JUNO实验综述}{8}%
-\contentsline {subsection}{\numberline {2.1}JUNO中的中微子物理}{8}%
-\contentsline {subsubsection}{\numberline {2.1.1}中微子的质量顺序}{8}%
-\contentsline {subsubsection}{\numberline {2.1.2}JUNO 对中微子的精确测量}{9}%
-\contentsline {subsubsection}{\numberline {2.1.3}JUNO其他相关中微子研究}{9}%
-\contentsline {subsection}{\numberline {2.2}实验方案}{9}%
-\contentsline {subsubsection}{\numberline {2.2.1}JUNO的中微子信号}{9}%
-\contentsline {subsubsection}{\numberline {2.2.2}实验的探测器设计}{10}%
-\contentsline {subsubsection}{\numberline {2.2.3}JUNO的刻度系统}{11}%
-\contentsline {subsubsection}{\numberline {2.2.4}JUNO TAO（台山反中微子观测台）}{11}%
-\contentsline {subsubsection}{\numberline {2.2.5}JUNO 优势及物理意义}{11}%
+\contentsline {subsection}{\numberline {1.3}中微子的质量}{8}%
+\contentsline {section}{\numberline {2}JUNO实验综述}{9}%
+\contentsline {subsection}{\numberline {2.1}JUNO中的中微子物理}{9}%
+\contentsline {subsubsection}{\numberline {2.1.1}中微子的质量顺序}{9}%
+\contentsline {subsubsection}{\numberline {2.1.2}JUNO 对中微子的精确测量}{11}%
+\contentsline {subsubsection}{\numberline {2.1.3}JUNO其他相关中微子研究}{12}%
+\contentsline {subsection}{\numberline {2.2}实验方案}{12}%
+\contentsline {subsubsection}{\numberline {2.2.1}JUNO的中微子信号}{12}%
+\contentsline {subsubsection}{\numberline {2.2.2}实验的探测器设计}{12}%
+\contentsline {subsubsection}{\numberline {2.2.3}JUNO的刻度系统}{13}%
+\contentsline {subsubsection}{\numberline {2.2.4}JUNO TAO（台山反中微子观测台）}{13}%
+\contentsline {subsubsection}{\numberline {2.2.5}JUNO 优势及物理意义}{14}%
