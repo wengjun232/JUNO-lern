@@ -15,6 +15,7 @@
 \usepackage{amssymb}
 \usepackage{siunitx}
 
+
 \usepackage{amsmath}
  \usepackage{siunitx}
 \usepackage{geometry}
@@ -223,7 +224,7 @@ P(\bar{\nu_e}-\bar{\nu_e},L)=1-{\sin^2{2\theta_{12}}} c_{13}^4\sin^2{\frac{\Delt
 \begin{itemize}
 	\item{中微子MNSP轻子混合矩阵中三个非零混合角在精度在4\%到10\%得到了测量。}
     \item{中微子两个独立的质量平方差的大小已经测量，且测量精度优于4\%。}
-    \item{目前测出的中微子质量平方差其中一个差得到的仅为其大小，对于其中的正负号仍然未知，因此，第三代中微子和前两代中微子的质量大小顺序是未知的。$\Delta m_{2,1}^2=m_{2}^2-m_{1}^2;|\Delta m_{3,1}^2|=|m_{3}^2-m_{1}^2|$}
+    \item{目前测出的中微子质量平方差其中一个差得到的仅为其大小，对于其中的正负号仍然未知，因此，第三代中微子和前两代中微子的质量大小顺序是未知的。$\Delta m_{21}^2=m_{2}^2-m_{1}^2;|\Delta m_{31}^2|=|m_{3}^2-m_{1}^2|$}
     \item{混合角中的$\theta_{23}$只知道其范围，但不知其具体取值。}
     \item{轻子CP破坏中，在MNSP矩阵中的$\delta$ 未知。}
 \end{itemize}
@@ -286,10 +287,23 @@ F(\frac{L}{E})=\phi(E)\sigma(E)P_{\bar{\nu_e}\rightarrow\bar{\nu_e}}(\frac{L}{E}
 
 给定傅里叶的正余弦变换形式：
 \begin{equation}
-•
+\begin{split}
+FST(\omega)=\int_{t_{min}}^{t_{max}}F(t)\sin(\omega t)dt\\
+FCT(\omega)=\int_{t_{min}}^{t_{max}}F(t)\cos(\omega t)
+\end{split}
 \end{equation}
-下图是反应堆中微子的傅立叶谱\footnote{引自：Neutrino Physics with JUNO，Fg2-5}：
 
+
+在式（23）中，令$t=\frac{L}{E}$，作为时间谱，令$\omega=2.54\Delta m_{ij}^2$，作为频率谱，将$F(\frac{L}{E})$分解到傅里叶的频谱上。同时，F的傅里叶变换应该是三个分量的叠加，而1-$P_{21}$不含质量排序项，对质量谱不敏感，在变换其前后作为基线出现；$P_{31}$，$P_{32}$是跟质量顺序有关的项，因此，在以质量平方的差作为频率的傅里叶谱上，会出现不同的分布，如下图5所示\footnote{引自：Determination of the Neutrino Mass Hierarchy at an Intermediate Baseline，Fg2}：
+\begin{figure}[ht]
+ \centering
+ \includegraphics[height=10cm]{images/diff-P31-P32.png}
+ \caption{FCT与FST后，三个分量1-$P_{21}$,$P_{31}$，$P_{32}$,的频率谱}
+ \label{fig:singleblock}
+\end{figure}
+
+
+在NH中，$|\Delta m_{31}^2|=|\Delta m_{32}^2|+|\Delta m_{21}^2|$；在IH中，$|\Delta m_{31}^2|=|\Delta m_{32}^2|+|\Delta m_{21}^2|$，其中$|\Delta m_{31}^2|=(2.13 \pm 0.13) \times 10^{-3}{eV}^2 $，。从图5中可以得到，$P_{31}$，$P_{32}$在$|\Delta m_{32}^2|$和$|\Delta m_{31}^2|$附近有形状比较相似的峰，且在峰的两侧有两个谷，两者的峰之间有一段差值；在FST谱中，其谱线零点的位置对应了FCT谱的峰的位置。将1-$P_{21}$，$P_{31}$，$P_{32}$的FCT和FST谱进行叠加，可以得到NH和IH的FCT和FST谱，将叠加各分量后的FCT和FST谱绘制到一张谱图中如图6\footnote{引自：Neutrino Physics with JUNO，Fg2-5}：
 \begin{figure}[ht]
  \centering
  \includegraphics[height=5cm]{images/傅里叶图谱.png}
@@ -297,7 +311,18 @@ F(\frac{L}{E})=\phi(E)\sigma(E)P_{\bar{\nu_e}\rightarrow\bar{\nu_e}}(\frac{L}{E}
  \label{fig:singleblock}
 \end{figure}
 
-从图中可以看到，IH和NH在余弦谱上都有有两个明显的峰，一个峰为正，一个峰为负，但是不同之处在于NH先出现正的峰，而IH先出现负的峰，且IH的两个峰的位置更加靠前。在正弦的谱上，则可以观察到IH有明显的负值峰，NH有一个明显的正值峰，且IH的峰出现在NH之前。因此，可以利用傅里叶谱区分出IH和NH，得到MH。
+从图中可以得到：
+\begin{itemize}
+	\item{在FCT谱中，NH会在0.0025左右出现一个明显的峰，且在峰的两侧会有两个谷，在峰之后出现的谷比较低。}
+    \item{在FCT谱中，IH会在0.0023左右出现一个明显的峰，且在峰的两侧会有两个谷，在峰之前出现的谷比较低。}
+    \item{在FCT谱中，NH和IH呈现出关于0.0024轴对称，且对称轴的峰前为IH的，对称轴后的峰为NH的峰。}
+    \item{在FCT谱中，NH会在0.0025左右出现一个明显的峰，且在峰的两侧会有两个比较小的谷，在峰之前出现的谷比较低。}
+    \item{在FCT谱中，IH会在0.0023左右出现一个明显的谷，且在峰的两侧会有两个比较小的峰，在谷之后出现的峰比较低。}
+    \item{在FCT谱中，NH和IH呈现出关于（0.0024，0）中心对称，且对称点前为IH的谷，对称轴后为NH的峰。}
+\end{itemize}
+
+因此，在实验中，可以通过观测探测到的中微子的存活概率的谱，并投射到傅里叶的频率空间，通过对比FST和FCT谱的峰和谷的位置和计算模型中的峰和谷的符合程度，对中微子的质量顺序进行判断。
+
 
 中距离的中微子实验测量$|\Delta{m_{ee}^2}|$，当与$|\Delta{m_{\mu\mu}^2}|$的测量结合时，可以得到更多关于MH的信息，这使得JUNO实验中，对于MH的测量显得更加的准确。
 
@@ -310,7 +335,7 @@ F(\frac{L}{E})=\phi(E)\sigma(E)P_{\bar{\nu_e}\rightarrow\bar{\nu_e}}(\frac{L}{E}
     \item{第一次对多振荡的大气中微子振荡进行观测。}
     \item{对中微子振荡参数：$\sin^2{\theta_{12}}$，$\Delta m^2_{21}$，$|\Delta m^2_{ee}|$进行高精度的测量，且测量精度优于1\%。}
 \end{itemize}
-*该部分的深入调研和推导还在进行中。
+
 
 \subsubsection{JUNO其他相关中微子研究}
 
@@ -366,7 +391,6 @@ Cable Loop System (CLS)，Guide Tube Control System(GTCS) and Remotely Operated 
 其目标在于精确测量反应堆中微子谱，为JUNO提供独立光谱参考；提供同位素产额和光谱，监控台山核反应堆；同时，它还要用于探测惰性中微子。
 
 台山观测台使用的也是液体闪烁体探测器，其中心探测器是容纳26kton液体、直径为\SI{1.7}{m}的球体容器；液闪是掺入一定量的Gd的，工作温度控制在\SI{-50}{℃}；表面光电倍增管的覆盖面积超过90\%，光子的探测率超过50\%。
-
 
 
 \subsubsection{JUNO 优势及物理意义}\label{sub:logicinter}
