@@ -70,7 +70,7 @@
 
 \begin{figure}[ht]
  \centering
- \includegraphics[height=5cm]{images/中微子振荡示意图.jpg}
+ \includegraphics[height=4cm]{images/中微子振荡示意图.jpg}
  \caption{一个简单的中微子振荡图像表述}
  \label{fig:singleblock}
 \end{figure}
@@ -113,14 +113,13 @@
  \end{pmatrix}
 \end{equation}
 
-其中，$c_{ij}=\cos{\theta_{ij}}$，$s_{ij}=\sin{\theta_{ij}}$，$\delta$为CP破坏的相角。
+其中，$c_{ij}=\cos{\theta_{ij}}$，$s_{ij}=\sin{\theta_{ij}}$，$\delta$为CP破坏的相角\cite{•}。
 
 则态$\nu_{\alpha}$可以表示为质量态的叠加：
 \begin{equation}
 |\nu_{\alpha}\rangle=\sum_{k}U_{\alpha k}^{*}|\nu_{k}\rangle
 \end{equation}
-每个态的混合分量有因子$U_{\alpha k}^{*}$描述，这些因子可以从轻子混合矩阵所给出。
-且本征态满足归一化条件和轻子混合的统一性：
+本征态满足归一化条件和轻子混合的统一性：
 \begin{equation}
 \begin{split}
 \langle \nu_{\alpha}|\nu_{\beta}\rangle=\delta_{\alpha\beta}\\
@@ -140,13 +139,13 @@ i\frac{\partial}{\partial t}|\nu_{k}\rangle=H_{0}|\nu_{k}\rangle
 \begin{equation}
 |\nu_{k}(t)\rangle=e^{-iE_{k}t}|\nu_{k}\rangle
 \end{equation}
-带入到式（1）：
+带入到式（2）：
 \begin{equation}
-|\nu_{\alpha}(t)\rangle=\sum_{k}U_{\alpha k}^{*}|\nu_{k}(t)>=\sum_{k}U_{\alpha k}^{*}e^{-iE_{k}t}|\nu_{k}\rangle
+|\nu_{\alpha}(t)\rangle=\sum_{k}U_{\alpha k}^{*}|\nu_{k}(t)\rangle=\sum_{k}U_{\alpha k}^{*}e^{-iE_{k}t}|\nu_{k}\rangle
 \end{equation}
 做一个初始条件的约定：
 \[|\nu_{k}\rangle=|\nu_{k}(0)\rangle\]
-而式（1）的逆变换可以写为：
+而式（2）的逆变换可以写为：
 \begin{equation}
 |\nu_{k}\rangle=\sum_{k}U_{\alpha k}|\nu_{\alpha}\rangle
 \end{equation}
@@ -158,7 +157,7 @@ i\frac{\partial}{\partial t}|\nu_{k}\rangle=H_{0}|\nu_{k}\rangle
 \begin{equation}
 |\nu_{\alpha}(t)\rangle=\sum_{k,\alpha}U_{\alpha k}^{*}U_{\beta k}e^{-iE_{k}t}|\nu_{\beta}\rangle
 \end{equation}
-由此，可以认为t时刻的中微子的态可以表示为初始时刻的本征态的叠加，则可以得到，从态$|\alpha>$振荡到态$|\beta>$的幅度为：
+由此，t时刻的中微子的态可以表示为初始时刻的本征态的叠加.从态$|\alpha\rangle$振荡到态$|\beta\rangle$的幅度为：
 \begin{equation}
 A_{\alpha\beta}(t)=\langle\beta|\alpha(t)\rangle=\sum_{k}U_{\alpha k}^{*}U_{\beta k}e^{-iE_{k}t}
 \end{equation}
@@ -189,30 +188,80 @@ P_{\alpha\beta}(t)=\sum_{k,j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^
 带入欧拉公式展开，可将实部和虚部分开，同时根据k和j的大小关系可分为三部分，其中，k和j交换位置后的值应该是相等的，所以有：
 \begin{equation}
 \begin{split}
-P_{\alpha\beta}(L)=\sum_{k=j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}e^{-i\frac{\Delta m_{kj}}{2E}L}+\sum_{k,j |k<j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}e^{-i\frac{\Delta m_{kj}}{2E}L}+\sum_{k,j |k>j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}e^{-i\frac{\Delta m_{kj}}{2E}L}\\
-=\sum_{k}{|U_{\alpha k}|}^{2}{|U_{\beta k}|}^{2}+2\sum_{k,j |k>j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\cos(\frac{\Delta m_{kj}}{2E}L)+2\sum_{k,j |k>j}iU_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\sin(-\frac{\Delta m_{kj}}{2E}L)\\
-=\sum_{k}{|U_{\alpha k}|}^{2}{|U_{\beta k}|}^{2}+2\sum_{k,j |k>j}Re[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\cos(\frac{\Delta m_{kj}}{2E}L)]-2\sum_{k,j |k>j}Im[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\sin(-\frac{\Delta m_{kj}}{2E}L)]
+P_{\alpha\beta}(L)&=\sum_{k=j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}e^{-i\frac{\Delta m_{kj}}{2E}L}+\sum_{k,j |k<j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}e^{-i\frac{\Delta m_{kj}}{2E}L}
+\\&+\sum_{k,j |k>j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}e^{-i\frac{\Delta m_{kj}}{2E}L}
+\\&=\sum_{k}{|U_{\alpha k}|}^{2}{|U_{\beta k}|}^{2}+2\sum_{k,j |k>j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\cos(\frac{\Delta m_{kj}}{2E}L)
+\\&+2\sum_{k,j |k>j}iU_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\sin(-\frac{\Delta m_{kj}}{2E}L)
+\\&=\sum_{k}{|U_{\alpha k}|}^{2}{|U_{\beta k}|}^{2}+2\sum_{k,j |k>j}{\rm Re}[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\cos(\frac{\Delta m_{kj}}{2E}L)]
+\\&-2\sum_{k,j |k>j}{\rm Im}[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\sin(-\frac{\Delta m_{kj}}{2E}L)]
 \end{split}
 \end{equation}
 其中：\begin{equation}
-\sum_{k}{|U_{\alpha k}|}^{2}{|U_{\beta k}|}^{2}=\delta_{\alpha\beta}-2Re\sum_{k,j |k>j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}
+\sum_{k}{|U_{\alpha k}|}^{2}{|U_{\beta k}|}^{2}=\delta_{\alpha\beta}-2{\rm Re}\sum_{k,j |k>j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}
 \end{equation}
 
 结合余弦函数的二倍角公式，得到：
 \begin{equation}
 \begin{split}
-P_{\alpha\beta}(L)=\delta_{\alpha\beta}-2Re\sum_{k,j |k>j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}+2\sum_{k,j |k>j}Re[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\cos(\frac{\Delta m_{kj}}{2E}L)]\\-2\sum_{k,j |k>j}Im[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\sin(-\frac{\Delta m_{kj}}{2E}L)]\\
-=\delta_{\alpha\beta}-4\sum_{k,j |k>j}Re[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\sin^2(\frac{\Delta m_{kj}}{4E}L)]+\sum_{k,j |k>j}Im[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\sin(\frac{\Delta m_{kj}}{2E}L)]
+P_{\alpha\beta}(L)&=\delta_{\alpha\beta}-2{\rm Re}\sum_{k,j |k>j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}+2\sum_{k,j |k>j}{\rm Re}[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\cos(\frac{\Delta m_{kj}}{2E}L)]\\&-2\sum_{k,j |k>j}{\rm Im}[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\sin(-\frac{\Delta m_{kj}}{2E}L)]
+\\
+&=\delta_{\alpha\beta}-4\sum_{k,j |k>j}{\rm Re}[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\sin^2(\frac{\Delta m_{kj}}{4E}L)]
+\\&+\sum_{k,j |k>j}{\rm Im}[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\sin(\frac{\Delta m_{kj}}{2E}L)]
 \end{split}
 \end{equation}
 
+而U矩阵的形式可以写为：
+\begin{equation}
+\begin{aligned}
+U &= \begin{pmatrix}
+ 1 & 0 & 0 \\
+ 0 & c_{23} & s_{23} \\
+ 0 & -s_{23} & c_{23}
+ \end{pmatrix}
+ \begin{pmatrix}
+ c_{13} & 0 & s_{13}e^{i\delta} \\
+ 0 & 1 & 0 \\
+ -s_{13}e^{i\delta} & 0 & c_{13}
+ \end{pmatrix} 
+ \begin{pmatrix}
+ c_{12} & s_{12} & 0 \\
+ -s_{12} & c_{12} & 0 \\
+ 0 & 0 & 1
+ \end{pmatrix}
+ \\&=
+ \begin{pmatrix}
+ c_{12}c_{13} & s_{12}c_{13} & s_{13}e^{-i \delta} \\
+ -s_{12}c_{23}-c_{12}s_{23}s_{13}e^{i\delta} & c_{12}c_{23}-s_{12}s_{23}s_{13}e^{i\delta} & s_{23}c_{13} \\
+ s_{12}c_{23}-c_{12}c_{23}s_{13}e^{i\delta} &-c_{12}s_{23}-c_{12}c_{23}s_{13}e^{i\delta} & c_{23}c_{13}
+ \end{pmatrix}
+ \end{aligned}
+\end{equation}
+其中，$c_{ij}=cos\theta_{ij}，s_{ij}=sin\theta_{ij}$。
 
-在JUNO实验中，测量的主要是反应堆中微子，取$\alpha=\beta=\bar{\nu_e}$
-带入上式（17）：
+从展开式中可以得到，虚部可以表示为：
+\begin{equation}
+{\rm Im}[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}]=s_{\alpha \beta kj}J
+\end{equation}
+其中，$s_{\alpha \beta kj}\in {0,1,-1}$，J是表征cp破坏程度的观测量：
+\[
+J=\sin\delta s_{12}c_{12}s_{13}c_{13}^2 s_{23}c_{23}
+\]
+因此，式（）可以改写为：
+\begin{equation}
+\begin{aligned}
+P_{\alpha\beta}(L)&=\delta_{\alpha\beta}-4\sum_{k,j |k>j}{\rm Re}[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}\sin^2(\frac{\Delta m_{kj}}{4E}L)]
+\\&+2J\sum_{k,j |k>j}s_{\alpha \beta kj}\sin(\frac{\Delta m_{kj}}{2E}L)]
+\end{aligned}
+\end{equation}
+式（）中的${\rm Re}[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}]$与$s_{\alpha \beta kj}$各项可在文献\cite{2007fun}中Tab.13.1中找到。至此，就已经得到了中微子经过距离L后的存活概率。同时，可以从式（19）的表达式中看出，由质量的平方差值决定的中微子振荡的观测可以用于确定振荡角。
+
+
+在JUNO实验中，测量的主要是反应堆中微子的存活概率。取$\alpha=\beta=\bar{\nu_e}$
+得到：
 \begin{equation}
 \begin{split}
-P(\bar{\nu_e}\rightarrow\bar{\nu_e})=1-4\sum_{k,j |k>j}U_{e k}^{*}U_{e k}U_{e j}U_{e j}^{*}\sin^2(\frac{\Delta m_{kj}}{4E}L)\\
-=1-4\sum_{k,j |k>j}|U_{e k}|^2|U_{e j}|^2\sin^2(\frac{\Delta m_{kj}}{4E}L)
+P(\bar{\nu_e}\rightarrow\bar{\nu_e})&=1-4\sum_{k,j |k>j}U_{e k}^{*}U_{e k}U_{e j}U_{e j}^{*}\sin^2(\frac{\Delta m_{kj}}{4E}L)
+\\&=1-4\sum_{k,j |k>j}|U_{e k}|^2|U_{e j}|^2\sin^2(\frac{\Delta m_{kj}}{4E}L)
 \end{split}
 \end{equation}
 
@@ -220,20 +269,24 @@ P(\bar{\nu_e}\rightarrow\bar{\nu_e})=1-4\sum_{k,j |k>j}U_{e k}^{*}U_{e k}U_{e j}
 将MNSP矩阵带入到式（18），得到：
 \begin{equation}
 \begin{split}
-P(\bar{\nu_e}-\bar{\nu_e},L)=1-{\sin^2{2\theta_{12}}} c_{13}^4\sin^2{\frac{\Delta{m_{21}^2}L}{4E}}-\\
-\sin^2{2\theta_{13}} *[c_{12}^2\sin^2{\frac{\Delta{m_{31}^2}L}{4E}}+s_{12}^2\sin^2{\frac{\Delta{m_{32}^2}L}{4E}}]
+P(\bar{\nu_e}-\bar{\nu_e},L)&=1-{\sin^2{2\theta_{12}}} c_{13}^4\sin^2{\frac{\Delta{m_{21}^2}L}{4E}}\\&-
+\sin^2{2\theta_{13}} c_{12}^2\sin^2{\frac{\Delta{m_{31}^2}L}{4E}}
+\\&-\sin^2{2\theta_{13}} s_{12}^2\sin^2{\frac{\Delta{m_{32}^2}L}{4E}}
 \end{split}
 \end{equation}
 
-至此，就已经得到了中微子经过距离L后的存活概率。同时，可以从式（19）的表达式中看出，由质量的平方差值决定的中微子振荡可以用于确定振荡角。
+
+从反中微子的存活概率来看，不包含CP破坏相角$\delta$，在避免了CP破坏相角带来的测量问题的同时，也损失了测量CP破坏相角的可能性。
+
 \newpage
 \subsection{中微子的质量}\label{sub:sysover}
 
-中微子振荡实验证明了中微子是有质量的，且存在味道的混合。在振荡实验中，已经精确的测量了两个独立的中微子质量平方差的值，当目前仍然对于三者的质量大小仍然是未知的。
+中微子振荡实验证明了中微子是有质量的，且存在味道的混合。在振荡实验中，已经精确测量了两个独立的中微子质量平方差的值，但目前仍然对于三者的质量大小仍然是未知的。
 
-同时，物理学界对于中微子的绝对质量也没有实际的观测，振荡实验只能得到质量的平方差值，对于具体的绝对质量是无法提供信息的。德国的卡尔斯鲁厄氚中微子（KATRIN）实验通过测量β衰变的电子能谱终点来限制中微子质量，于2018年6月11日正式开始运行，是目前最灵敏的中微子“体重计”；KATRIN实验经过28天的数据采集给出的中微子的质量上限为\SI{1.1}{eV}，在进一步采数后，将会给出更加精确的测量值。
 
-宇宙微波背景辐射和大尺度结构的观测，因为有质量的中微子会影响宇宙的演化。PLANCK实验组的最新观测结果显示三个中微子质量之和的上限为\SI{0.23}{eV}（0.95置信度），由此可以看出中微子的绝对质量不超过\SI{0.1}{eV}。
+振荡实验只能得到质量的平方顺序，无法给出绝对质量的信息。德国的卡尔斯鲁厄氚中微子（KATRIN）实验通过测量$\beta$衰变的电子能谱终点来限制中微子质量，于2018年6月11日正式开始运行，是目前最灵敏的中微子“体重计”，在进行足够的采数后，将会给出更加精确的中微子的质量上限。
+
+宇宙微波背景辐射和大尺度结构的观测，因为有质量的中微子会影响宇宙的演化。PLANCK实验组的最新观测结果显示三个中微子质量之和的上限为\SI{0.23}{eV}（0.95置信度），由此可以看出中微子的绝对质量不超过\SI{0.1}{eV}\cite{plank}。
 
 \newpage
 \section{JUNO实验综述} \label{sysdes}%------------------------------
@@ -246,7 +299,6 @@ P(\bar{\nu_e}-\bar{\nu_e},L)=1-{\sin^2{2\theta_{12}}} c_{13}^4\sin^2{\frac{\Delt
 	\item{中微子MNSP轻子混合矩阵中三个非零混合角在精度在4\%到10\%得到了测量。}
     \item{中微子两个独立的质量平方差的大小已经测量，且测量精度优于4\%。}
     \item{目前测出的中微子质量平方差其中一个差得到的仅为其大小，对于其中的正负号仍然未知，因此，第三代中微子和前两代中微子的质量大小顺序是未知的。$\Delta m_{21}^2=m_{2}^2-m_{1}^2;|\Delta m_{31}^2|=|m_{3}^2-m_{1}^2|$}
-    \item{混合角中的$\theta_{23}$只知道其范围，但不知其具体取值。}
     \item{轻子CP破坏中，在MNSP矩阵中的cp破坏相角$\delta$ 未知。}
 \end{itemize}
 
@@ -411,7 +463,7 @@ Cable Loop System (CLS)，Guide Tube Control System(GTCS) and Remotely Operated 
 
 其目标在于精确测量反应堆中微子谱，为JUNO提供独立光谱参考；提供同位素产额和光谱，监控台山核反应堆；同时，它还要用于探测惰性中微子。
 
-台山观测台使用的也是液体闪烁体探测器，其中心探测器是容纳26kton液体、直径为\SI{1.7}{m}的球体容器；液闪是掺入一定量的Gd的，工作温度控制在\SI{-50}{℃}；表面光电倍增管的覆盖面积超过90\%，光子的探测率超过50\%。
+台山观测台使用的也是液体闪烁体探测器，其中心探测器是容纳26kton液体、直径为\SI{17}{m}的球体容器；液闪是掺入一定量的Gd的，工作温度控制在\SI{-50}{℃}；表面光电倍增管的覆盖面积超过90\%，光子的探测率超过50\%。
 
 
 \subsubsection{JUNO 优势及物理意义}\label{sub:logicinter}
@@ -424,57 +476,8 @@ JUNO实验主要依赖周围的核电站的中微子信号进行探测。在距�
 
 \newpage
 
-\begin{thebibliography}{99} 
-%\cite{An:2015jdp}
-\bibitem{An:2015jdp}
-F.~An \textit{et al.} [JUNO],
-``Neutrino Physics with JUNO,''
-J. Phys. G \textbf{43} (2016) no.3, 030401
-doi:10.1088/0954-3899/43/3/030401
-[arXiv:1507.05613 [physics.ins-det]].
-%649 citations counted in INSPIRE as of 14 Dec 2020
-
-%\cite{Zhan:2008id}
-\bibitem{Zhan:2008id}
-L.~Zhan, Y.~Wang, J.~Cao and L.~Wen,
-``Determination of the Neutrino Mass Hierarchy at an Intermediate Baseline,''
-Phys. Rev. D \textbf{78} (2008), 111103
-doi:10.1103/PhysRevD.78.111103
-[arXiv:0807.3203 [hep-ex]].
-%142 citations counted in INSPIRE as of 14 Dec 2020
-
-%\cite{Steiger:2019khq}
-\bibitem{Steiger:2019khq}
-H.~T.~J.~Steiger [JUNO],
-``Design and Status of JUNO,''
-J. Phys. Conf. Ser. \textbf{1468} (2020) no.1, 012187
-doi:10.1088/1742-6596/1468/1/012187
-[arXiv:1912.02038 [physics.ins-det]].
-%2 citations counted in INSPIRE as of 14 Dec 2020
-
-%\cite{Ludhova:2020vxz}
-\bibitem{Ludhova:2020vxz}
-L.~Ludhova, H.~Rebber, B.~S.~Wonsak and Y.~Xu,
-``Particle Identification at MeV Energies in JUNO,''
-[arXiv:2007.02687 [physics.ins-det]].
-%0 citations counted in INSPIRE as of 14 Dec 2020
-
-%\cite{Abusleme:2020bzt}
-\bibitem{Abusleme:2020bzt}
-A.~Abusleme \textit{et al.} [JUNO],
-``TAO Conceptual Design Report: A Precision Measurement of the Reactor Antineutrino Spectrum with Sub-percent Energy Resolution,''
-[arXiv:2005.08745 [physics.ins-det]].
-%4 citations counted in INSPIRE as of 14 Dec 2020
-
-%\cite{Zhang:2017ewk}
-\bibitem{Zhang:2017ewk}
-Q.~Zhang \textit{et al.} [JUNO],
-%``JUNO Central Detector and its Calibration System,''
-PoS \textbf{ICHEP2016} (2017), 967
-doi:10.22323/1.282.0967
-%6 citations counted in INSPIRE as of 14 Dec 2020
-
-\end{thebibliography}
+\bibliographystyle{unsrt}
+\bibliography{ref.bib}
 
 \end{document}
 
