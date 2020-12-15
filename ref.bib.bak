@@ -3,6 +3,43 @@
   author={ Giunti, Carlo  and  Kim, Chung W },
   year={2007},
 }
+@article{Abusleme:2020bzt,
+    author = "Abusleme, Angel and others",
+    collaboration = "JUNO",
+    title = "{TAO Conceptual Design Report: A Precision Measurement of the Reactor Antineutrino Spectrum with Sub-percent Energy Resolution}",
+    eprint = "2005.08745",
+    archivePrefix = "arXiv",
+    primaryClass = "physics.ins-det",
+    month = "5",
+    year = "2020"
+}
+@article{Zhan:2009rs,
+    author = "Zhan, Liang and Wang, Yifang and Cao, Jun and Wen, Liangjian",
+    title = "{Experimental Requirements to Determine the Neutrino Mass Hierarchy Using Reactor Neutrinos}",
+    eprint = "0901.2976",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    doi = "10.1103/PhysRevD.79.073007",
+    journal = "Phys. Rev. D",
+    volume = "79",
+    pages = "073007",
+    year = "2009"
+}
+@article{Zhan:2008id,
+    author = "Zhan, Liang and Wang, Yifang and Cao, Jun and Wen, Liangjian",
+    title = "{Determination of the Neutrino Mass Hierarchy at an Intermediate Baseline}",
+    eprint = "0807.3203",
+    archivePrefix = "arXiv",
+    primaryClass = "hep-ex",
+    doi = "10.1103/PhysRevD.78.111103",
+    journal = "Phys. Rev. D",
+    volume = "78",
+    pages = "111103",
+    year = "2008"
+}
+@article{pic1,
+  title={http://dayawane.ihep.ac.cn/chinese/gcgk/syjj/index.shtml}
+}
 @article{2016Neutrino,
   title={Neutrino physics with JUNO},
   journal={Journal of Physics G Nuclear Physics},
@@ -100,18 +137,6 @@
     number = "1",
     pages = "012187",
     year = "2020"
-}
-@article{Zhan:2008id,
-    author = "Zhan, Liang and Wang, Yifang and Cao, Jun and Wen, Liangjian",
-    title = "{Determination of the Neutrino Mass Hierarchy at an Intermediate Baseline}",
-    eprint = "0807.3203",
-    archivePrefix = "arXiv",
-    primaryClass = "hep-ex",
-    doi = "10.1103/PhysRevD.78.111103",
-    journal = "Phys. Rev. D",
-    volume = "78",
-    pages = "111103",
-    year = "2008"
 }
 @article{Osipowicz:2001sq,
     author = "Osipowicz, A. and others",

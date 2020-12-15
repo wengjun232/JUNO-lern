@@ -1,15 +1,29 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{pic1}
+http://dayawane.ihep.ac.cn/chinese/gcgk/syjj/index.shtml.
+
+\bibitem{2007fun}
+Carlo Giunti and Chung~W Kim.
+\newblock Fundamentals of neutrino physics and astrophysics.
+\newblock 2007.
+
+\bibitem{2016Neutrino}
+Neutrino physics with juno.
+\newblock {\em Journal of Physics G Nuclear Physics}, 43, 2016.
+
+\bibitem{2019Physics}
+Claudio Lombardo, Mario Buscemi, Giuseppe Andronico, Sebastiano Aiello, and
+  Giuseppe Verde.
+\newblock Physics potential of the jiangmen underground neutrino observatory.
+\newblock In {\em XXIX International Symposium on Lepton Photon Interactions at
+  High Energies}, 2019.
 
 \bibitem{2009Experimental}
 Liang Zhan, Yifang Wang, Jun Cao, and Liangjian Wen.
 \newblock Experimental requirements to determine the neutrino mass hierarchy
   using reactor neutrinos.
 \newblock {\em Physical Review D}, 79(7):--, 2009.
-
-\bibitem{2007fun}
-Carlo Giunti and Chung~W Kim.
-\newblock Fundamentals of neutrino physics and astrophysics.
-\newblock 2007.
 
 \bibitem{plank}
 P.A.R. Ade et~al.
@@ -28,6 +42,12 @@ Liang Zhan, Yifang Wang, Jun Cao, and Liangjian Wen.
   Baseline}.
 \newblock {\em Phys. Rev. D}, 78:111103, 2008.
 
+\bibitem{Zhan:2009rs}
+Liang Zhan, Yifang Wang, Jun Cao, and Liangjian Wen.
+\newblock {Experimental Requirements to Determine the Neutrino Mass Hierarchy
+  Using Reactor Neutrinos}.
+\newblock {\em Phys. Rev. D}, 79:073007, 2009.
+
 \bibitem{Ludhova:2020vxz}
 Livia Ludhova, Henning Rebber, Bj\"orn~Soenke Wonsak, and Yu~Xu.
 \newblock {Particle Identification at MeV Energies in JUNO}.
@@ -37,5 +57,17 @@ Livia Ludhova, Henning Rebber, Bj\"orn~Soenke Wonsak, and Yu~Xu.
 Hans Theodor~Josef Steiger.
 \newblock {Design and Status of JUNO}.
 \newblock {\em J. Phys. Conf. Ser.}, 1468(1):012187, 2020.
+
+\bibitem{Zhang:2017ewk}
+Qingmin Zhang, Yuhang Guo, Yuekun Heng, Li~Zhou, Boxiang Yu, Jianglai Liu,
+  Mengjiao Xiao, and Feiyang Zhang.
+\newblock {JUNO Central Detector and its Calibration System}.
+\newblock {\em PoS}, ICHEP2016:967, 2017.
+
+\bibitem{Abusleme:2020bzt}
+Angel Abusleme et~al.
+\newblock {TAO Conceptual Design Report: A Precision Measurement of the Reactor
+  Antineutrino Spectrum with Sub-percent Energy Resolution}.
+\newblock 5 2020.
 
 \end{thebibliography}
