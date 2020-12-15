@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.9.17)  14 DEC 2020 23:44
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.9.17)  15 DEC 2020 10:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -586,9 +586,6 @@ LaTeX Warning: Label `sub:sysover' multiply defined.
 LaTeX Warning: Label `sub:sysover' multiply defined.
 
 
-LaTeX Warning: Label `E1' multiply defined.
-
-
 LaTeX Warning: Label `fig:singleblock' multiply defined.
 
 
@@ -610,13 +607,13 @@ LaTeX Warning: Label `sub:logicinter' multiply defined.
 LaTeX Warning: Label `fig:singleblock' multiply defined.
 
 
+LaTeX Warning: Label `sub:logicinter' multiply defined.
+
+
+LaTeX Warning: Label `sub:logicinter' multiply defined.
+
+
 LaTeX Warning: Label `fig:singleblock' multiply defined.
-
-
-LaTeX Warning: Label `sub:logicinter' multiply defined.
-
-
-LaTeX Warning: Label `sub:logicinter' multiply defined.
 
 
 LaTeX Warning: Label `sub:logicinter' multiply defined.
@@ -785,37 +782,34 @@ File: images/中微子振荡示意图.jpg Graphic file (type bmp)
 LaTeX Warning: Citation `An:2015jdp' on page 4 undefined on input line 78.
 
 Missing character: There is no ， in font [lmroman10-regular]:mapping=tex-text;!
-
-LaTeX Warning: Citation `•' on page 4 undefined on input line 116.
-
 [4] [5] [6]
 Missing character: There is no ， in font [lmroman10-regular]:mapping=tex-text;!
  [7] [8] [9]
 
-LaTeX Warning: Citation `An:2015jdp' on page 10 undefined on input line 297.
+LaTeX Warning: Citation `An:2015jdp' on page 10 undefined on input line 363.
 
 
-LaTeX Warning: Citation `An:2015jdp' on page 10 undefined on input line 307.
+LaTeX Warning: Citation `An:2015jdp' on page 10 undefined on input line 373.
 
 File: images/L-selet.png Graphic file (type bmp)
 <images/L-selet.png>
-[10] [11]
+[10]
 File: images/diff-P31-P32.png Graphic file (type bmp)
 <images/diff-P31-P32.png>
+ [11]
 File: images/傅里叶图谱.png Graphic file (type bmp)
 <images/傅里叶图谱.png>
  [12] [13]
-Overfull \hbox (27.30113pt too wide) in paragraph at lines 428--429
+Overfull \hbox (27.30113pt too wide) in paragraph at lines 497--498
 []\TU/FandolSong-Regular(0)/m/n/10 如 果 探 测 器 探 测 到 这 个 中 微 子 入 射 并 与 液 闪 作 用，| 
  那 么 会 在 探 测 得 到 的 波 形 中 看 到，|  在[][]处
  []
 
 File: images/探测器示意图.png Graphic file (type bmp)
 <images/探测器示意图.png>
-[14]
 File: images/pmt测试.png Graphic file (type bmp)
 <images/pmt测试.png>
- [15] [16] [17] (./try.bbl)
+[14] [15] [16] (./try.bbl)
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -850,7 +844,7 @@ braces):
 >  {english/babelname}  =>  {american}
 >  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [18] (./try.aux
+ [17] (./try.aux
 LaTeX Info: Redefining \rmfamily on input line 2.
 LaTeX Info: Redefining \sffamily on input line 2.
 LaTeX Info: Redefining \ttfamily on input line 2.
@@ -863,12 +857,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18357 strings out of 479819
- 415465 string characters out of 5895846
- 659853 words of memory out of 5000000
- 35231 multiletter control sequences out of 15000+600000
- 539092 words of font info for 89 fonts, out of 8000000 for 9000
+ 18311 strings out of 479819
+ 410439 string characters out of 5895846
+ 660106 words of memory out of 5000000
+ 35188 multiletter control sequences out of 15000+600000
+ 539076 words of font info for 87 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  56i,18n,73p,822b,519s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on try.pdf (18 pages).
+Output written on try.pdf (17 pages).

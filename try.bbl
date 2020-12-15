@@ -1,5 +1,11 @@
 \begin{thebibliography}{1}
 
+\bibitem{2009Experimental}
+Liang Zhan, Yifang Wang, Jun Cao, and Liangjian Wen.
+\newblock Experimental requirements to determine the neutrino mass hierarchy
+  using reactor neutrinos.
+\newblock {\em Physical Review D}, 79(7):--, 2009.
+
 \bibitem{2007fun}
 Carlo Giunti and Chung~W Kim.
 \newblock Fundamentals of neutrino physics and astrophysics.
@@ -9,5 +15,27 @@ Carlo Giunti and Chung~W Kim.
 P.A.R. Ade et~al.
 \newblock {Planck 2015 results. XIII. Cosmological parameters}.
 \newblock {\em Astron. Astrophys.}, 594:A13, 2016.
+
+\bibitem{Ternes:2020bvy}
+Christoph~Andreas Ternes.
+\newblock {\em {Neutrino oscillation phenomenology in the standard model and
+  beyond}}.
+\newblock PhD thesis, U. Valencia (main), 2020.
+
+\bibitem{Zhan:2008id}
+Liang Zhan, Yifang Wang, Jun Cao, and Liangjian Wen.
+\newblock {Determination of the Neutrino Mass Hierarchy at an Intermediate
+  Baseline}.
+\newblock {\em Phys. Rev. D}, 78:111103, 2008.
+
+\bibitem{Ludhova:2020vxz}
+Livia Ludhova, Henning Rebber, Bj\"orn~Soenke Wonsak, and Yu~Xu.
+\newblock {Particle Identification at MeV Energies in JUNO}.
+\newblock 7 2020.
+
+\bibitem{Steiger:2019khq}
+Hans Theodor~Josef Steiger.
+\newblock {Design and Status of JUNO}.
+\newblock {\em J. Phys. Conf. Ser.}, 1468(1):012187, 2020.
 
 \end{thebibliography}

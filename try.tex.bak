@@ -20,7 +20,7 @@
 \usepackage{amsmath}
  \usepackage{siunitx}
 \usepackage{geometry}
-
+\newcommand{\myref}[1]{Eq.\ ref{#1}}
 \author{翁俊}
 \title{江门中微子实验（JUNO）调研报告}
 
@@ -158,7 +158,7 @@ i\frac{\partial}{\partial t}|\nu_{k}\rangle=H_{0}|\nu_{k}\rangle
 \end{equation}
 
 
-带入到式\eqref{con:eq2}：
+带入到式\ref{con:eq2}：
 \begin{equation}
 \label{con:eq7}
 |\nu_{\alpha}(t)\rangle=\sum_{k}U_{\alpha k}^{*}|\nu_{k}(t)\rangle=\sum_{k}U_{\alpha k}^{*}e^{-iE_{k}t}|\nu_{k}\rangle
@@ -169,21 +169,21 @@ i\frac{\partial}{\partial t}|\nu_{k}\rangle=H_{0}|\nu_{k}\rangle
 \[|\nu_{k}\rangle=|\nu_{k}(0)\rangle\]
 
 
-而式\eqref{con:eq2}的逆变换可以写为：
+而式\ref{con:eq2}的逆变换可以写为：
 \begin{equation}
 \label{con:eq8}
 |\nu_{k}\rangle=\sum_{k}U_{\alpha k}|\nu_{\alpha}\rangle
 \end{equation}
 
 
-带入到式\eqref{con:eq6}并用$\beta$代替$\alpha$：
+带入到式\ref{con:eq6}并用$\beta$代替$\alpha$：
 \begin{equation}
 \label{con:eq9}
 |\nu_{k}(t)\rangle=\sum_{\beta}U_{\beta k}^{*}e^{-iE_{k}t}|\nu_{\beta}\rangle
 \end{equation}
 
 
-结合式\eqref{con:eq6}\eqref{con:eq8}，可以得到：
+结合式\ref{con:eq6}\ref{con:eq8}，可以得到：
 \begin{equation}
 \label{con:eq10}
 |\nu_{\alpha}(t)\rangle=\sum_{k,\alpha}U_{\alpha k}^{*}U_{\beta k}e^{-iE_{k}t}|\nu_{\beta}\rangle
@@ -215,7 +215,7 @@ E_{k}=\sqrt{p^2+m_k^2}=|p|\sqrt{1+\frac{m_k^2}{p^2}}\approx |p|+\frac{m_k^2}{2|p
 
 
 其中，$E=|q|$。
-带入到式\eqref{con:eq12}：
+带入到式\ref{con:eq12}：
 \begin{equation}
 \label{con:eq14}
 P_{\alpha\beta}(t)=\sum_{k,j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}e^{-i\frac{\Delta m_{kj}^2}{2E}t}
@@ -225,7 +225,7 @@ P_{\alpha\beta}(t)=\sum_{k,j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^
 $\Delta m_{kj}^2=m_k^2-m_j^2$表示的是中微子质量本征态的质量平方的差。
 
 
-在自然单位中，光速c的量纲为1，近似认为中微子速度为c，在t是时刻传播的距离为L，带入到式\eqref{con:eq14}:
+在自然单位中，光速c的量纲为1，近似认为中微子速度为c，在t是时刻传播的距离为L，带入到式\ref{con:eq14}:
 \begin{equation}
 \label{con:eq15}
 P_{\alpha\beta}(t)=\sum_{k,j}U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}e^{-i\frac{\Delta m_{kj}^2}{2E}L}
@@ -264,7 +264,7 @@ P_{\alpha\beta}(L)&=\delta_{\alpha\beta}-2{\rm Re}\sum_{k,j |k>j}U_{\alpha k}^{*
 \end{equation}
 
 
-而式\eqref{con:eq1}中MNSP矩阵的形式可以写为：
+而式\ref{con:eq1}中MNSP矩阵的形式可以写为：
 \begin{equation}
 \label{con:eq19}
 \begin{aligned}
@@ -307,7 +307,7 @@ J=\sin\delta s_{12}c_{12}s_{13}c_{13}^2 s_{23}c_{23}
 \]
 
 
-因此，式\eqref{con:eq18}可以改写为：
+因此，式\ref{con:eq18}可以改写为：
 \begin{equation}
 \label{con:eq21}
 \begin{aligned}
@@ -317,7 +317,7 @@ P_{\alpha\beta}(L)&=\delta_{\alpha\beta}-4\sum_{k,j |k>j}{\rm Re}[U_{\alpha k}^{
 \end{equation}
 
 
-式\eqref{con:eq21}中的${\rm Re}[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}]$与$s_{\alpha \beta kj}$各项可在文献\cite{2007fun}中Tab.13.1中找到。至此，就已经得到了中微子经过距离L后的存活概率。同时，可以从式（19）的表达式中看出，由质量的平方差值决定的中微子振荡的观测可以用于确定振荡角。
+式\ref{con:eq21}中的${\rm Re}[U_{\alpha k}^{*}U_{\beta k}U_{\alpha j}U_{\beta j}^{*}]$与$s_{\alpha \beta kj}$各项可在文献\cite{2007fun}中Tab.13.1中找到。至此，就已经得到了中微子经过距离L后的存活概率。同时，可以从式（19）的表达式中看出，由质量的平方差值决定的中微子振荡的观测可以用于确定振荡角。
 
 
 在JUNO实验中，测量的主要是反应堆中微子的存活概率。取$\alpha=\beta=\bar{\nu_e}$
@@ -331,7 +331,7 @@ P(\bar{\nu_e}\rightarrow\bar{\nu_e})&=1-4\sum_{k,j |k>j}U_{e k}^{*}U_{e k}U_{e j
 \end{equation}
 
 
-将MNSP矩阵带入到式\eqref{con:eq22}，得到：
+将MNSP矩阵带入到式\ref{con:eq22}，得到：
 \begin{equation}
 \label{con:eq23}
 \begin{split}
@@ -383,7 +383,7 @@ P(\bar{\nu_e}-\bar{\nu_e},L)&=1-{\sin^2{2\theta_{12}}} c_{13}^4\sin^2{\frac{\Del
 \end{equation}
 
 
-式\eqref{con:eq30}可写为：
+式\ref{con:eq30}可写为：
  \begin{equation}
  \label{con:eq24}
  \begin{split}
@@ -391,7 +391,9 @@ P(\bar{\nu_e}-\bar{\nu_e},L)&=1-{\sin^2{2\theta_{12}}} c_{13}^4\sin^2{\frac{\Del
  \end{split}
  \end{equation}
 
-其中：$\Delta_{ij}=\frac{\Delta{m_{ij}^2}L}{4E}$，
+其中：$
+\Delta_{ij}=\frac{\Delta{m_{ij}^2}L}{4E}$
+
 $\Delta_{ee}=\Delta{m_{ee}^2}=\sin^2{\theta_{12}}\Delta{m_{31}^2}-\cos^2{\theta_{12}}\Delta{m_{32}^2}$
 
 定义：$\Delta{m_{\phi}^2}=\frac{4E\phi}{L}$
