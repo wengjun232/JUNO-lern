@@ -3,7 +3,6 @@
 \defaultfontfeatures{Mapping=tex-text}
 \usepackage{xunicode}
 \usepackage{xltxtra}
-%\setmainfont{???}
 \usepackage{xeCJK}
 \usepackage{ctex}
 \usepackage{polyglossia}
@@ -61,7 +60,7 @@
 \newpage
 %----------------------------------SYSTEM DESIGN------------------------------------------
 
-\subsection{中微子振荡}\label{sub:sysover}
+\subsection{中微子振荡}\label{sub:01}
 
 
 中微子振荡（Neutrino oscillation）是一个量子力学现象，是指中微子在生成时所伴随的轻子（包括电子，$\mu$子和$\tau$子）味可在之后转化成不同的味，而被测量出改变。当中微子在空间中传播时，自发的会发生味道的周期性变化。
@@ -346,7 +345,7 @@ P(\bar{\nu_e}-\bar{\nu_e},L)&=1-{\sin^2{2\theta_{12}}} c_{13}^4\sin^2{\frac{\Del
 从反中微子的存活概率来看，不包含CP破坏相角$\delta$，在避免了CP破坏相角带来的测量问题的同时，也损失了测量CP破坏相角的可能性。
 
 \newpage
-\subsection{中微子的质量}\label{sub:sysover}
+\subsection{中微子的质量}\label{sub:1}
 
 中微子振荡实验证明了中微子是有质量的，且存在味道的混合。在振荡实验中，已经精确测量了两个独立的中微子质量平方差的值，但目前仍然对于三者的质量大小仍然是未知的。
 
@@ -356,10 +355,10 @@ P(\bar{\nu_e}-\bar{\nu_e},L)&=1-{\sin^2{2\theta_{12}}} c_{13}^4\sin^2{\frac{\Del
 宇宙微波背景辐射和大尺度结构的观测，因为有质量的中微子会影响宇宙的演化。PLANCK实验组的最新观测结果显示三个中微子质量之和的上限为\SI{0.23}{eV}（0.95置信度），由此可以看出中微子的绝对质量不超过\SI{0.1}{eV}\cite{plank}。
 
 \newpage
-\section{JUNO实验综述} \label{sysdes}%------------------------------
+\section{JUNO实验综述} \label{sysdes1}%------------------------------
 
-\subsection{JUNO中的中微子物理}\label{sub:sysover}
-\subsubsection{中微子的质量顺序}\label{sub:sysover}
+\subsection{JUNO中的中微子物理}\label{sub:2}
+\subsubsection{中微子的质量顺序}\label{sub:3}
 
 中微子振荡现象的发现确定了中微子的质量不为0，目前，标准的中微子的三味振荡的研究现状如下\cite{2016Neutrino}：
 \begin{itemize}
@@ -414,9 +413,9 @@ L代表了中微子实验的基线长度，E为所测量的反电子中微子的
 \end{figure}
 
 
-JUNO实验前期采用了最小二乘法来表征质量顺序的敏感程度，建立的卡方函数如式\eqref{con:eq30}：
+JUNO实验前期采用了最小二乘法来表征质量顺序的敏感程度，建立的卡方函数如式\eqref{con:eq300}：
 \begin{equation}
- \label{con:eq30}
+ \label{con:eq300}
  \begin{split}
     \chi_{REA}^2=\Sigma_{i=1}^{N_{bin}}\frac{[M_i-T_i(1+\Sigma_{k}\alpha_{ik} \epsilon_{k})]^2}{M_{i}}+\Sigma_{k}
 \frac{\epsilon_k^2}{\sigma_k^2} 
@@ -429,7 +428,7 @@ $作为MH的敏感程度，得到如Figure \ref{fig:21}的结果\cite{2016Neutri
 
 \begin{figure}[H]
  \centering
- \includegraphics[height=7cm]{images/L-selet1.png}
+ \includegraphics[height=5cm]{images/L-selet1.png}
  \caption{模拟6年采数后MH对基线长度（$L$）的敏感程度（图左）和对两个核电站的距离之差的敏感程度（$\Delta L$），从左图可知，探测器建在距离核电站\SI{50}{km}左右时，MH的敏感程度是最高的；从右图可知，两个核电站到实验点的距离之差$\Delta L=0$时，MH的敏感程度最高。}
  \label{fig:21}
 \end{figure}
@@ -522,7 +521,7 @@ PV=\frac{P-V}{P+V}
 
 式\eqref{con:eq31}中的正负号与质量顺序相关。当与$|\Delta{m_{\mu\mu}^2}|$的测量结合时，可以得到更多关于MH的信息，这使得JUNO实验中，对于MH的测量显得更加的准确\cite{2016Neutrino}。
 
-\subsubsection{JUNO 对中微子的精确测量}\label{sub:1}
+\subsubsection{JUNO 对中微子的精确测量}\label{sub:4}
 
 除了中微子的质量顺序问题，JUNO实验还将关注中微子振荡参数的精确测量以及测试三中微子标准模型。其具体的工作目标如下\cite{2009Experimental}：
 
@@ -537,9 +536,9 @@ PV=\frac{P-V}{P+V}
 
 JUNO实验设备是目前世界上正在建设的最大的液闪探测器，优秀的分辨率和探测精度使得JUNO可以胜任很多的中微子研究。在太阳中微子研究、漫射超新星中微子背景、超新星中微子、大气中微子、地球中微子方面，都将在投入运行采数后发挥重要作用。
 
-\subsection{实验方案}\label{sub:2}
+\subsection{实验方案}\label{sub:5}
 
-\subsubsection{JUNO的中微子信号}\label{sub:3}
+\subsubsection{JUNO的中微子信号}\label{sub:6}
 
 中微子是不带电的粒子，在实验上无法直接观测到，但是中微子会参与一些弱相互作用，产生特定的带电粒子，实验上通过观测中微子与物质作用后产生的次级粒子，可以间接的观测到中微子的信号。
 
@@ -552,7 +551,7 @@ JUNO是通过反$\beta$衰变（inverse beta decay，简称IBD）事件探测中
 
 如果探测器探测到这个中微子入射并与液闪作用，那么会在探测得到的波形中看到两个具有时间相关性的不同能量的峰，发生时间早的正电子湮灭过程会先在光谱上的\SI{0.511}{MeV}处或者\SI{1.022}{MeV}处（两个$\gamma$光子发生了重叠）形成观测峰，之后的200多ns后，释放\SI{2.2}{MeV}光子的过程也会完成，在信号的能量谱上形成\SI{2.2}{MeV}处的峰。可以通过做时间符合的方式来进行中微子的信号鉴别，取出中微子的信号。
 
-\subsubsection{实验的探测器设计}\label{sub:4}
+\subsubsection{实验的探测器设计}\label{sub:7}
 
 江门中微子实验使用的是球体液闪探测器，装载着\SI{20}{kton}液体闪烁体的中心探测器放置在水池中，其建设结构如下Figure \ref{fig:3}：\cite{Ludhova:2020vxz}
 \begin{figure}[H]
@@ -562,12 +561,12 @@ JUNO是通过反$\beta$衰变（inverse beta decay，简称IBD）事件探测中
  \label{fig:3}
 \end{figure}
 
-中心探测器的表面覆盖了4万多个光电倍增管，其中，18000个光电倍增管的直径为20英寸，分为13000个Micro-channel plates (NNVT)光电倍增管；5000个Dynode光电倍增管( the Hamamatsu R12860 HQE )；20寸的光电倍增管具有27\%的探测效率。NNVT光电倍增管具有更小的余波出现概率、玻璃壳带来的本底更低；R12860光电倍增管有更小的渡越时间离散。\cite{Steiger:2019khq}而36000只3英寸的光电倍增管将作为独立的量热器使用。20英寸与3英寸的光电倍增管的镶嵌结构如Figure \ref{fig:3}:
+中心探测器的表面覆盖了4万多个光电倍增管，其中，18000个光电倍增管的直径为20英寸，分为13000个Micro-channel plates (NNVT)光电倍增管；5000个Dynode光电倍增管( the Hamamatsu R12860 HQE )；20寸的光电倍增管具有27\%的探测效率。NNVT光电倍增管具有更小的余波出现概率、玻璃壳带来的本底更低；R12860光电倍增管有更小的渡越时间离散。\cite{Steiger:2019khq}而36000只3英寸的光电倍增管将作为独立的量热器使用。20英寸与3英寸的光电倍增管的镶嵌结构如Figure \ref{fig:34}:
 \begin{figure}[H]
  \centering
  \includegraphics[height=5cm]{images/PMTsyt.png}
  \caption{20英寸的光电倍增管密排，并将3英寸的光电倍增管镶嵌在20英寸管子形成的空隙中。\cite{Zhang:2017ewk}}
- \label{fig:3}
+ \label{fig:34}
 \end{figure}
 
 
@@ -585,7 +584,7 @@ JUNO是通过反$\beta$衰变（inverse beta decay，简称IBD）事件探测中
 
 探测器中装载了20kton的液体闪烁体介质，其中包含的成分为\SI{2.5}{g/L}的PPO和1-\SI{4}{mg/L}的bis-MSB，前者为产生光子的主要成分，后者能将光子的波长进行一定的移动，提高液闪探测器的透光率。
 
-\subsubsection{JUNO的刻度系统}\label{sub:5}
+\subsubsection{JUNO的刻度系统}\label{sub:8}
 由信号的形成原理可以知道，JUNO实验是通过正电子的快信号和中子的慢信号做符合的方式来确定中微子信号。为了满足实验的高精度要求及正常工作，必须对实验探测器的能量响应和其随空间的变化做精确的标定。对探测器的标定内容通常需要包括：液闪的光学性质、探测器对中子的响应、探测效率以及俘获时间、探测器对于正电子响应、能量标度以及触发等。
 
 JUNO实验有自己的一套刻度系统。主要包括了 Automatic Calibration Unit (ACU),
@@ -598,7 +597,7 @@ Cable Loop System (CLS)，Guide Tube Control System(GTCS) and Remotely Operated 
  \label{fig:41}
 \end{figure}
 
-\subsubsection{JUNO TAO（台山反中微子观测台）}\label{sub:6}
+\subsubsection{JUNO TAO（台山反中微子观测台）}\label{sub:9}
 
 台山反中子观测台也是属于JUNO实验的一部分，使用的也是液体闪烁体探测器。
 
@@ -615,7 +614,7 @@ Cable Loop System (CLS)，Guide Tube Control System(GTCS) and Remotely Operated 
 
 
 
-\subsubsection{JUNO 优势及物理意义}\label{sub:7}
+\subsubsection{JUNO 优势及物理意义}\label{sub:10}
 
 JUNO实验主要依赖周围的核电站的中微子信号进行探测。在距离JUNO50多公里的地方，有阳江核电站和台山核电站，两个核电站功率达到了\SI{26.6}{GW}，每天能探测到大概60个来自核反应堆的IBD事件。同时，JUNO对于其他来源的中微子也有足够的探测率：每天能探测到10-1000个太阳中微子，1-2个地球中微子，数个大气中微子。
 
