@@ -292,7 +292,7 @@ U &= \begin{pmatrix}
  \end{pmatrix}
  \end{aligned}
 \end{equation}
-其中，$c_{ij}=cos\theta_{ij}，s_{ij}=sin\theta_{ij}$。
+其中，$c_{ij}=\cos\theta_{ij}，s_{ij}=\sin\theta_{ij}$。
 
 
 从展开式中可以得到，虚部可以表示为：
@@ -302,7 +302,7 @@ U &= \begin{pmatrix}
 \end{equation}
 
 
-其中，$s_{\alpha \beta kj}\in {0,1,-1}$，J是表征CP破坏程度的观测量：
+其中，$s_{\alpha \beta kj}\in \{0,1,-1\}$，J是表征CP破坏程度的观测量：
 \[
 J=\sin\delta s_{12}c_{12}s_{13}c_{13}^2 s_{23}c_{23}
 \]
@@ -457,7 +457,7 @@ F(\frac{L}{E})=\phi(E)\sigma(E)P_{\bar{\nu_e}\rightarrow\bar{\nu_e}}(\frac{L}{E}
 
 其中，$\phi(E)$描述的是中微子的发射谱，即来自于反应堆中不同反应中对应于能量E的发射；$\sigma(E)$描述的是探测器探测到中微子的反应截面。
 
-给定傅里叶的正余弦变换形式\cite{Zhan:2009rs}\cite{han:2008id}：
+给定傅里叶的正余弦变换形式\cite{Zhan:2009rs}\cite{Zhan:2008id}：
 \begin{equation}
 \label{con:eq27}
 \begin{split}
@@ -516,7 +516,7 @@ PV=\frac{P-V}{P+V}
 中基线的JUNO中微子实验测量$|\Delta{m_{ee}^2}|$。而：
 \begin{equation}
 \label{con:eq31}
-|\Delta{m_{ee}^2}|-|\Delta {m^{2}_{\mu \mu}}|=\pm \Delta m_{21}^2(\cos2\theta_{12}-\sin2\theta_{12}\sin\theta_{13}\tan\theta_{23}\cos\delta
+|\Delta{m_{ee}^2}|-|\Delta {m^{2}_{\mu \mu}}|=\pm \Delta m_{21}^2(\cos2\theta_{12}-\sin2\theta_{12}\sin\theta_{13}\tan\theta_{23}\cos\delta)
 \end{equation}
 
 
@@ -543,10 +543,11 @@ JUNO实验设备是目前世界上正在建设的最大的液闪探测器，优�
 
 中微子是不带电的粒子，在实验上无法直接观测到，但是中微子会参与一些弱相互作用，产生特定的带电粒子，实验上通过观测中微子与物质作用后产生的次级粒子，可以间接的观测到中微子的信号。
 
-JUNO是通过反$\beta$衰变（inverse beta decay，简称IBD）事件探测中微$$p+\bar{\nu}\Rightarrow e^{+}+n$$
+JUNO是通过反$\beta$衰变（inverse beta decay，简称IBD）事件探测中微子：$$p+\bar{\nu}\Rightarrow e^{+}+n$$
+
 当一个反中微子与质子作用后，会产生一个中子和一个正电子。正电子是空间中不稳定的存在，它会和物质中的电子发生湮灭过程，一个正电子和电子湮灭后会产生两个能量大小为0.511MeV的$\gamma$光子。
 
-在衰变产生中子之后一段时间，中子会被氢原子核俘获，这个过程使得原子核激发，在退激发的过程中会释放一个光子，光子的能量大概是\SI{2.2}{MeV}。
+在衰变产生中子之后一段时间，中子会被氢原子核俘获，这个过程使得原子核激发，在退激发的过程中会释放一个能量为\SI{2.2}{MeV}的光子。
 
 
 如果探测器探测到这个中微子入射并与液闪作用，那么会在探测得到的波形中看到两个具有时间相关性的不同能量的峰，发生时间早的正电子湮灭过程会先在光谱上的\SI{0.511}{MeV}处或者\SI{1.022}{MeV}处（两个$\gamma$光子发生了重叠）形成观测峰，之后的200多ns后，释放\SI{2.2}{MeV}光子的过程也会完成，在信号的能量谱上形成\SI{2.2}{MeV}处的峰。可以通过做时间符合的方式来进行中微子的信号鉴别，取出中微子的信号。
@@ -561,7 +562,7 @@ JUNO是通过反$\beta$衰变（inverse beta decay，简称IBD）事件探测中
  \label{fig:3}
 \end{figure}
 
-中心探测器的表面覆盖了4万多个光电倍增管，其中，18000个光电倍增管的直径为20英寸，分为13000个Micro-channel plates (NNVT)光电倍增管；5000个Dynode光电倍增管( the Hamamatsu R12860 HQE )；20寸的光电倍增管具有27\%的探测效率。NNVT光电倍增管具有更小的余波出现概率、玻璃壳带来的本底更低；R12860光电倍增管有更小的渡越时间离散。\cite{Steiger:2019khq}而36000只3英寸的光电倍增管将作为独立的量热器使用。20英寸与3英寸的光电倍增管的镶嵌结构如Figure \ref{fig:22}:
+中心探测器的表面覆盖了4万多个光电倍增管，其中，18000个光电倍增管的直径为20英寸，分为13000个Micro-channel plates (NNVT)光电倍增管；5000个Dynode光电倍增管( the Hamamatsu R12860 HQE )；20寸的光电倍增管具有27\%的探测效率。NNVT光电倍增管具有更小的余波出现概率、玻璃壳带来的本底更低；R12860光电倍增管有更小的渡越时间离散。\cite{Steiger:2019khq}而36000只3英寸的光电倍增管将作为独立的量热器使用。20英寸与3英寸的光电倍增管的镶嵌结构如Figure \ref{fig:3}:
 \begin{figure}[H]
  \centering
  \includegraphics[height=5cm]{images/PMTsyt.png}
